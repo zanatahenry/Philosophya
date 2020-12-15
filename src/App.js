@@ -1,10 +1,18 @@
 import React from 'react'
+import { ThemeProvider } from 'styled-components'
+import { Reset } from 'styled-reset'
 
-import Header from './components/header'
+import theme from './theme'
+import Home from './pages/Home'
 
-export default function App() {
+function App() {
   
   return (
-    <Header/>
+    <ThemeProvider theme={theme}>
+      <Reset />
+      <Home />
+    </ThemeProvider>
   );
 }
+
+export default App;
