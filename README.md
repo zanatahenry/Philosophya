@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <img src="src/assets/resources/print.png" alt="Philosophya"/>
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+<p align="center">O Philosophya é um passa tempo, surgiu para pessoas que adoram a filosofia, e por curiosidade querem receber uma frase de um filósofo. </p>
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">
+    <a href="#sobre">Sobre</a> &nbsp|&nbsp
+    <a href="#projeto">Projeto</a> &nbsp|&nbsp
+    <a href="#tecnologias-utilizadas">Tecnologias</a> &nbsp|&nbsp
+    <a href="#como-executar-no-seu-computador">Como executar</a> &nbsp|&nbsp
+    <a href="#autor">Autor</a>
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h2>Sobre</h2>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p>
+    O projeto surgiu para pessoas interessadas em filosofia, e que gostaria de passar seu tempo recebendo frases aleatórias de filósofos.
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>
+    Teve como inciativa criar um projeto para fixar meus conhecimentos em cursos realizados, primeiramente com <a href="https://getbootstrap.com/">Bootstrap</a>, segunda versão do projeto com <a href="https://reactjs.org/">ReactJS</a>
+</p>
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h2>
+    Projeto
+</h2>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Home Page](src/assets/resources/home-page.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+ 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h2>
+    Tecnologias utilizadas
+</h2>
 
-### Code Splitting
+##### Para a criação do Front-end está sendo usadas as seguintes tecnologias: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+:white_check_mark: [ReactJS](https://reactjs.org/)
 
-### Analyzing the Bundle Size
+:nail_care:[Styled-Components](https://styled-components.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+:white_check_mark: [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+<h2>
+    Como executar no seu computador
+</h2>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+##### O que é necessário ?
 
-### `yarn build` fails to minify
+É necessário ter instalado em sua máquina as seguintes ferramentas: [Git](https://git-scm.com), [NodeJS](https://nodejs.org/en/) e [Yarn](https://yarnpkg.com/). Também é bom ter um editor de código de sua preferência.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+#### 1. Clone este repositório
+
+```powershell
+git clone https://github.com/zanatahenry/Philosophya.git
+```
+
+
+
+#### 2. Acesse a pasta do projeto no terminal
+
+```powershell
+cd philosophya
+```
+
+
+
+#### 3. Instale as dependências
+
+```powershell
+yarn install
+```
+
+
+
+#### 4. Execute a aplicação em modo de desenvolvimento
+
+```powershell
+yarn start
+```
+
+
+
+<br>
+
+<br>
+
+<p>
+    A aplicação provavelmente irá abrir automaticamente no seu navegador padrão. Caso isso não ocorra, acesse <b>http://localhost:3000</b>
+</p>
+
+
+
+<h2>
+    Autor
+</h2>
+
+##### Henry Willian Zanata
+
+<img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/66282954?s=460&u=727cad6fe9cea0ff3b16d6651fc5b27963d81271&v=4" width="100px;" alt="Henry Zanata"/>	
+
+
+
+Se quiser, entre em contato :exclamation:
+
+[![Linkedin Badge](https:*//img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/henry-zanata/)](https://www.linkedin.com/in/henry-zanata/)
+
+[![Gmail Badge](https:*//img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:henryzanata@hotmail.com)](henryzanata@hotmail.com)
+
