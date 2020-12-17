@@ -12,6 +12,8 @@ export const HeaderPrincipal = styled.header `
   height: 75px;
   background: #212529;
   border-bottom: 1px solid #F8F9FA;
+  position: fixed;
+  
 
   display: flex;
   flex-direction: row;
@@ -23,6 +25,7 @@ export const LogoContainer = styled.div `
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
 `;
 
 export const LogoImg = styled.img `
@@ -35,10 +38,10 @@ export const Nav = styled.nav `
   align-items: center;
 `;
 
-export const SectionPrincipal = styled.section `
+export const BlackSection = styled.section `
   background-color: #212529;
   width: 100%;
-  height: 55rem;
+  height: 100vh;
 
   display: flex;
   flex-direction: row;
@@ -47,13 +50,14 @@ export const SectionPrincipal = styled.section `
 `;
 
 
-export const SectionAddWord = styled.section `
+export const WhiteSection = styled.section `
   background-color: #F8F9FA;
   width: 100%;
-  height: 55rem;
+  height: 100vh;
 
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 `;
 
 export const ContainerSection = styled.div `
@@ -61,6 +65,7 @@ export const ContainerSection = styled.div `
   flex-direction: column;
 
   align-items: center;
+  margin-top: 33px; 
   
 `;
 
@@ -82,22 +87,28 @@ export const NavItems = styled.a `
 `;
 
 export const ButtonAdd = styled.a `
-  color: #F8F9FA;
+  color: ${(props) =>(props.dark ? '#F8F9FA' : '#212529')};
+  background-color: ${(props) =>(props.dark ? '#212529' : '#F8F9FA')};
   font-size: 18px;
-  font-weight: 300;
+  font-weight: ${(props) =>(props.dark ? '300' : '700')};
   text-decoration: none;
-  padding: 6px;
+  /* padding: 25px; */
+  padding: ${(props) =>(props.dark ? '6px' : '15px')};
   cursor: pointer;
 
-  border: 1px solid #F8F9FA;
+  border: 1px solid;
+  border-color: ${(props) =>(props.dark ? '#F8F9FA' : '#212529')};
   border-radius: 4px;
+
+  margin-top: ${(props) =>(props.dark ? '0' : '10rem')};
+  margin-right: ${(props) =>(props.dark ? '0' : '10rem')};
 
   display: flex;
   align-items: center;
 
   :hover{
-    color: #212529;
-    background-color: #F8F9FA;
+    color: ${(props) =>(props.dark ? '#212529' : '#F8F9FA')};
+    background-color: ${(props) =>(props.dark ? '#F8F9FA' : '#212529')};
     transition: 140ms;
   }
 `;
@@ -105,7 +116,7 @@ export const ButtonAdd = styled.a `
 export const ButtonReceive = styled.button  `
   color: #F8F9FA;
   background-color: #212529;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 300;
   text-decoration: none;
   padding: 15px;
@@ -126,25 +137,23 @@ export const ButtonReceive = styled.button  `
 `; 
 
 export const Title = styled.h1 `
-  color: #F8F9FA;
-  font-size: 24px;
+  color: ${(props) =>(props.dark ? '#F8F9FA' : '#212529')};
+  font-size: 34px;
   font-weight: 700;
   letter-spacing: 2px;
 
-  width: 500px;
+  width: 600px;
   margin-top: 10rem;
-  margin-left: 10rem;
+  margin-left: 14rem;
 `;
 
 export const Paragraph = styled.p `
-  color: #F8F9FA;
-  font-size: 16px;
+  color: ${(props) =>(props.dark ? '#F8F9FA' : '#212529')};
+  font-size: 26px;
   font-weight: 400;
   letter-spacing: 2px;
 
-  width: 500px;
-  margin-top: 2rem;
-  margin-left: 10rem;
-
-
+  width: 600px;
+  margin-top: ${(props) =>(props.margin ? '18rem' : '2rem')};
+  margin-left: 14rem;
 `;

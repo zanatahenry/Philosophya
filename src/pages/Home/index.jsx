@@ -12,13 +12,15 @@ import {
   ButtonReceive,
   Title,
   Paragraph,
-  SectionPrincipal,
-  SectionAddWord } from './styles'
+  BlackSection,
+  WhiteSection } from './styles'
 
 import MaterialIcon from '@material/react-material-icon';
 
 import Logo from '../../assets/logo.svg'
 import Man from '../../assets/man.svg'
+import IdeaImg from '../../assets/lamp.svg'
+import About from '../../assets/idea.svg'
 
 
 const Home = () => {
@@ -35,17 +37,16 @@ const Home = () => {
     <Nav>
       <NavItems>Home</NavItems>
       <NavItems>Sobre</NavItems>
-      <ButtonAdd>Adicionar frase</ButtonAdd>
+      <ButtonAdd dark>Adicionar frase</ButtonAdd>
     </Nav>
     </HeaderPrincipal>
 
-    
-    <SectionPrincipal>
+    <BlackSection>
       <ContainerSection>
 
-        <Title>Quer saber o que os filósofos querem falar para você?</Title>
+        <Title dark>Quer saber o que os filósofos querem falar para você?</Title>
 
-        <Paragraph>Clique no botão e receba uma frase especialmente para você!</Paragraph>
+        <Paragraph dark>Clique no botão e receba uma frase especialmente para você!</Paragraph>
 
         <ButtonReceive>Receba uma frase!</ButtonReceive>
 
@@ -53,13 +54,39 @@ const Home = () => {
       </ContainerSection>
 
         <img src={Man} alt="Imagem filósofo"/>
+    </BlackSection>
 
-    </SectionPrincipal>
+    <WhiteSection>
+      <img src={IdeaImg} alt="Idéia"/>
 
-    <SectionAddWord>
-      
+      <ContainerSection>
+        <Title>Quer adicionar novas frases do seu filósofo favorito?</Title>
 
-    </SectionAddWord>
+        <Paragraph>Para adicionar é bem fácil</Paragraph>
+        <Paragraph>Basta colocar a frase escolhida por você e o nome do autor.</Paragraph>
+
+        <ButtonAdd>Adicionar nova frase</ButtonAdd>
+
+      </ContainerSection>
+    </WhiteSection>
+
+    <BlackSection>
+      <ContainerSection>
+
+        <Paragraph dark margin>
+          O philosophya é um passa tempo, surgiu para pessoas que adoram a filosofia, 
+          e por curiosidade querem receber uma frase de um filósofo.
+        </Paragraph>
+
+        <Paragraph dark >
+          O projeto foi criado principalmente para fixar os conhecimentos adquiridos em cursos realizados.
+        </Paragraph>
+
+      </ContainerSection>
+
+      <img src={About} alt="Sobre"/>
+
+    </BlackSection>
 
   </Container>
   )
