@@ -3,7 +3,8 @@ import React from 'react'
 import { 
   Container, 
   ContainerSection,
-  HeaderPrincipal, 
+  HeaderPrincipal,
+  FooterPrincipal, 
   LogoContainer, 
   LogoImg, 
   Nav, 
@@ -15,7 +16,7 @@ import {
   BlackSection,
   WhiteSection } from './styles'
 
-import MaterialIcon from '@material/react-material-icon';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 import Logo from '../../assets/logo.svg'
 import Man from '../../assets/man.svg'
@@ -87,6 +88,39 @@ const Home = () => {
       <img src={About} alt="Sobre"/>
 
     </BlackSection>
+
+    <FooterPrincipal>
+      <LogoContainer>
+          <a href="/">
+            <LogoImg src={Logo} />
+          </a>
+      </LogoContainer>
+
+      <Paragraph dark>Feito por Henry Zanata</Paragraph>
+
+      <Nav>
+      <NavItems 
+        href="https://github.com/zanatahenry"
+        target="_blank"
+      >
+        <FaGithub size={28}/>
+      </NavItems>
+
+      <NavItems 
+        href="https://linkedin.com/in/henry-zanata"
+        target="_blank"
+      >
+        <FaLinkedin size={28} />
+      </NavItems>
+
+      <NavItems
+        href="mailto:henryzanata@hotmail.com"
+      >
+        <FaEnvelope size={28} />
+      </NavItems>
+    </Nav>
+
+    </FooterPrincipal>
 
   </Container>
   )

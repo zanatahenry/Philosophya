@@ -7,6 +7,17 @@ export const Container = styled.body`
   overflow-x: hidden;
 `;
 
+export const FooterPrincipal = styled.footer `
+    width: 100%;
+    height: 75px;
+    background: #212529;
+    border-top: 1px solid #F8F9FA;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+`;
+
 export const HeaderPrincipal = styled.header `
   width: 100%;
   height: 75px;
