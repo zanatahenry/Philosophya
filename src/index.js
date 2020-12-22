@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '@material/react-material-icon/dist/material-icon.css';
+import '@material/react-text-field/dist/text-field.css';
 
 ReactDOM.render(
   <React.StrictMode>

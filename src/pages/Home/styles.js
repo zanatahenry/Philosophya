@@ -155,7 +155,7 @@ export const Title = styled.h1 `
 
   width: 600px;
   margin-top: 10rem;
-  margin-left: 14rem;
+  margin-left: ${(props) =>(props.modal ? '6rem' : '14rem')};
 `;
 
 export const Paragraph = styled.p `

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { 
   Container, 
@@ -15,6 +15,7 @@ import {
   Paragraph,
   BlackSection,
   WhiteSection } from './styles'
+  import TextField, {Input} from '@material/react-text-field';
 
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
@@ -23,9 +24,13 @@ import Man from '../../assets/man.svg'
 import IdeaImg from '../../assets/lamp.svg'
 import About from '../../assets/idea.svg'
 
+import Modal from '../../components/Modal'
+
 
 const Home = () => {
   
+  const [ modalVisible, setModalVisible ] = useState(false)
+
   return(
   <Container>
     <HeaderPrincipal>
@@ -36,13 +41,13 @@ const Home = () => {
       </LogoContainer>
     
     <Nav>
-      <NavItems>Home</NavItems>
-      <NavItems>Sobre</NavItems>
-      <ButtonAdd dark>Adicionar frase</ButtonAdd>
+      <NavItems href="#home">Home</NavItems>
+      <NavItems href="#about">Sobre</NavItems>
+      <ButtonAdd dark href="#adphrase">Adicionar frase</ButtonAdd>
     </Nav>
     </HeaderPrincipal>
 
-    <BlackSection>
+    <BlackSection id="home">
       <ContainerSection>
 
         <Title dark>Quer saber o que os filósofos querem falar para você?</Title>
@@ -57,7 +62,7 @@ const Home = () => {
         <img src={Man} alt="Imagem filósofo"/>
     </BlackSection>
 
-    <WhiteSection>
+    <WhiteSection id="adphrase">
       <img src={IdeaImg} alt="Idéia"/>
 
       <ContainerSection>
@@ -66,12 +71,30 @@ const Home = () => {
         <Paragraph>Para adicionar é bem fácil</Paragraph>
         <Paragraph>Basta colocar a frase escolhida por você e o nome do autor.</Paragraph>
 
-        <ButtonAdd>Adicionar nova frase</ButtonAdd>
+        <ButtonAdd onClick={ () => setModalVisible(true) }>Adicionar nova frase</ButtonAdd>
+        {modalVisible ? (
+        <Modal onClose={() => setModalVisible(false)}>
+          <Title dark modal>Adicione uma nova frase!</Title>
+
+          <TextField
+          label='Frase'
+        ><Input
+        onChange={(e) => this.setState({value: e.currentTarget.value})}
+        />
+        </TextField>
+
+        <TextField
+          label='Autor'
+        ><Input/>
+        </TextField>
+          
+        </Modal> ) : null}
+
 
       </ContainerSection>
     </WhiteSection>
 
-    <BlackSection>
+    <BlackSection id="about">
       <ContainerSection>
 
         <Paragraph dark margin>
