@@ -8,7 +8,8 @@ import {
   LogoContainer, 
   LogoImg, 
   Nav, 
-  NavItems, 
+  NavItems,
+  ButtonAddModalPrhase, 
   ButtonAdd,
   ButtonReceive,
   Title,
@@ -78,15 +79,25 @@ const Home = () => {
 
           <TextField
           label='Frase'
-        ><Input
-        onChange={(e) => this.setState({value: e.currentTarget.value})}
-        />
-        </TextField>
+          style={{
+            marginTop: 40,
+            width: 400,
+          }}
+          ><Input
+          onChange={(e) => this.setState({value: e.currentTarget.value})}
+          />
+          </TextField>
 
         <TextField
           label='Autor'
+          style={{
+            marginTop: 20,
+            width: 400
+          }}
         ><Input/>
         </TextField>
+
+        <ButtonAddModalPrhase style={{backgroundColor: '#1ea51e', color: '#F8F9FA', outline: 'none'}}>Salvar</ButtonAddModalPrhase>
           
         </Modal> ) : null}
 

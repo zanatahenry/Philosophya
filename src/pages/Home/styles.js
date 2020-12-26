@@ -124,6 +124,18 @@ export const ButtonAdd = styled.a `
   }
 `;
 
+export const ButtonAddModalPrhase = styled.button `
+  width: 400px;
+  height: 50px;
+  font-size: 18px;
+
+  margin-top: 3rem; 
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+`; 
+
 export const ButtonReceive = styled.button  `
   color: #F8F9FA;
   background-color: #212529;
@@ -154,7 +166,7 @@ export const Title = styled.h1 `
   letter-spacing: 2px;
 
   width: 600px;
-  margin-top: 10rem;
+  margin-top: ${(props) =>(props.modal ? '5rem' : '10rem')};
   margin-left: ${(props) =>(props.modal ? '6rem' : '14rem')};
 `;
 
